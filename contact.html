@@ -11,20 +11,20 @@
 
     <style>
       body {
-        /* background-color: rgb(252, 253, 225); */
         background-image: url("images/checker.webp");
-        background-size: cover; /* Cover the entire area */
-        background-repeat: no-repeat; /* Prevent repeating */
-        background-position: center; /* Center the image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         color: aliceblue;
         text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
-          1px 1px 0px black; /* Outline effect */
+          1px 1px 0px black;
       }
 
       h1 {
+        padding-top: 30px;
         color: aliceblue;
         text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
-          1px 1px 0px black; /* Outline effect */
+          1px 1px 0px black;
       }
 
       .contact-forms {
@@ -36,8 +36,15 @@
       }
 
       table {
-        width: 40%; /* Set the width of the table */
-        margin: 0 auto; /* Center the table */
+        width: 40%;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 600px) {
+        table {
+          width: 60%;
+          padding-bottom: 20px;
+        }
       }
     </style>
   </head>
