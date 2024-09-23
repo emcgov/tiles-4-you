@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tiles 4 You - contact page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        /* background-color: rgb(252, 253, 225); */
+        background-image: url("images/checker.webp");
+        background-size: cover; /* Cover the entire area */
+        background-repeat: no-repeat; /* Prevent repeating */
+        background-position: center; /* Center the image */
+        color: aliceblue;
+        text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
+          1px 1px 0px black; /* Outline effect */
+      }
+
+      h1 {
+        color: aliceblue;
+        text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black,
+          1px 1px 0px black; /* Outline effect */
+      }
+
+      .contact-forms {
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+
+      table {
+        width: 40%; /* Set the width of the table */
+        margin: 0 auto; /* Center the table */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+
+    <h1 id="contact">Get in Touch</h1>
+    <div class="contact-forms">
+      <h3>Contact us today!</h3>
+
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="description">Description of the problem:</label><br />
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <p>
+        If you prefer to call—we get it, don't worry—any of these numbers below
+        will do the trick.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>(555) 123-4567</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>(555) 987-6543</td>
+          </tr>
+          <tr>
+            <td>Mike Johnson</td>
+            <td>(555) 555-5555</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

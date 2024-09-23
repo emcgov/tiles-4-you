@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tiles 4 You</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background-color: rgb(186, 217, 247);
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        /* padding-top: 60px; Adjust depending on navbar height */
+        font-size: 190px;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+
+      h3 {
+        font-size: 75px;
+        text-align: center;
+        margin-top: 0px;
+      }
+
+      /* Flex container for the images */
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative; /* Allow positioning of text and overlay */
+      }
+
+      .image-wrapper {
+        position: relative;
+        width: 32%; /* Each image takes up roughly one-third of the page */
+        overflow: hidden;
+      }
+
+      .image-wrapper img {
+        width: 100%; /* Fill the width of the container */
+        height: 100%; /* Maintain aspect ratio */
+        object-fit: cover; /* Zooms in to cover the area */
+        display: block; /* Prevents any gaps below images */
+      }
+
+      /* Translucent overlay */
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0); /* Black with 50% opacity */
+        z-index: 1;
+      }
+
+      /* Text displayed over the images */
+      .text-overlay {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        z-index: 2; /* Ensures text is above the overlay */
+        text-align: center;
+      }
+      .background-overlay {
+        position: absolute;
+        top: 75%; /* Align with the middle of the container */
+        left: 0;
+        width: 100%; /* Stretch across the full width */
+        height: 60px; /* Adjust height as needed */
+        transform: translateY(-50%); /* Adjust to keep it centered */
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+        z-index: 1; /* Place it behind the text */
+      }
+
+      .mask {
+        background: url(images/logo.jpg) 50% 50% / 5% 50% repeat;
+        color: #de466c;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0px;
+      }
+
+      p {
+        font-size: 30px;
+        text-align: center;
+        padding: 5px;
+      }
+
+      .bottom-link {
+        font-size: 40px;
+        text-align: center;
+
+        padding-bottom: 50px;
+      }
+      .bottom-link a:hover {
+        color: rgb(9, 99, 12);
+      }
+    </style>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+
+    <h1 id="home">Tiles 4 You</h1>
+    <h3 class="mask">Custom tile installation</h3>
+    <p>
+      Looking for a way to splash some color into your home? Tile may be the
+      answer! We'll take a look at what you're working with through a free
+      in-home consulation and suggest some ideas—or let you take the reigns and
+      work on the design right along with us. We're happy to help in whatever
+      way you'd like.
+    </p>
+    <h3>Common services include:</h3>
+    <!-- here list (horizontally) 
+         have each li item span the width of the page
+    
+    -->
+
+    <div class="image-container">
+      <div class="background-overlay"></div>
+      <div class="text-overlay">Backsplashes</div>
+      <!-- Image 1 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/backsplash.jpg" alt="image of backsplash" />
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Image 2 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/backsplash1.jpg" alt="image of backsplash" />
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Image 3 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/backsplash2.jpg" alt="image of backsplash" />
+        <div class="overlay"></div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 20px"></div>
+
+    <div class="image-container">
+      <div class="background-overlay"></div>
+      <div class="text-overlay">Bathrooms</div>
+      <!-- Image 1 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/shower.jpg" alt="image of shower" />
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Image 2 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/shower1.jpg" alt="image of shower1" />
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Image 3 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/shower2.jpg" alt="image of shower3" />
+        <div class="overlay"></div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 20px"></div>
+
+    <div class="image-container">
+      <div class="background-overlay"></div>
+      <div class="text-overlay">Mosaics</div>
+      <!-- Image 1 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/mosaic.jpg" alt="image of mosaic" />
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Image 2 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/mosaic1.jpg" alt="image of mosaic1" />
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Image 3 with overlay -->
+      <div class="image-wrapper">
+        <img src="images/mosaic2.jpg" alt="image of mosaic2" />
+        <div class="overlay"></div>
+      </div>
+    </div>
+
+    <h3>Interested?</h3>
+    <div class="bottom-link">
+      <a href="contact.html">Contact us!</a>
+    </div>
+  </body>
+</html>
